@@ -1,0 +1,91 @@
+{% extends "index.html" %}
+
+{% block title %}About Todo App{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="todo-container">
+        <h1 class="mb-4">About Todo App</h1>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Welcome to Your Personal Todo Manager</h3>
+                <p class="lead">Simplify your life by organizing tasks efficiently!</p>
+                
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title">App Features</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Easy Task Management</strong>
+                                <p class="text-muted mb-0">Add, update, and delete todos with just a few clicks.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Persistent Storage</strong>
+                                <p class="text-muted mb-0">Your todos are saved and remain accessible across sessions.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Clean and Intuitive Interface</strong>
+                                <p class="text-muted mb-0">User-friendly design makes task tracking a breeze.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>How to Use the App</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Add a Todo</div>
+                                    Click on the "Add Todo" section, fill in the title and description.
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">View Todos</div>
+                                    All your todos are displayed in the table below the add form.
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Update a Todo</div>
+                                    Click the "Update" button next to any todo to modify its details.
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Delete a Todo</div>
+                                    Use the "Delete" button to remove a todo you no longer need.
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Quick Tips
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success mr-2"></i>Keep todos concise and actionable
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-sync text-info mr-2"></i>Update todos as you complete them
+                            </li>
+                            <li>
+                                <i class="fas fa-trash-alt text-danger mr-2"></i>Don't hesitate to delete completed todos
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
