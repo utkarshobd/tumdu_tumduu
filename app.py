@@ -55,9 +55,9 @@ def delete(sno):  # Accepting sno as a parameter
 #     return render_template('utk.txt')
 @app.route('/home')
 def home_page():
-    return render_template('index.html')
+    return render_template('index.html')    
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()
-    app.run()
+        db.create_all(.run())
+    app
